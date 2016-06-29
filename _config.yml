@@ -1,0 +1,5 @@
+source:       ./src/project-template/
+destination:  ./build/
+
+# This adds github pages data
+gems: ['jekyll-github-metadata']

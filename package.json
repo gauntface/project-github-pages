@@ -1,0 +1,22 @@
+{
+  "name": "project-github-pages",
+  "version": "0.0.1",
+  "description": "A simple template to use for projects that want a github pages site",
+  "main": "index.js",
+  "scripts": {
+    "install-dependencies": "./src/scripts/install-dependencies.sh",
+    "serve-site": "jekyll serve --watch",
+    "build-site": "jekyll build",
+    "test": "mocha ./test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauntface/project-github-pages.git"
+  },
+  "author": "gauntface",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gauntface/project-github-pages/issues"
+  },
+  "homepage": "https://github.com/gauntface/project-github-pages#readme"
+}
