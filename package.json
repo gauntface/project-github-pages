@@ -4,9 +4,6 @@
   "description": "A simple template to use for projects that want a github pages site",
   "main": "index.js",
   "scripts": {
-    "install-dependencies": "./src/scripts/install-dependencies.sh",
-    "serve-site": "jekyll serve --watch",
-    "build-site": "jekyll build",
     "test": "mocha ./test/*.js"
   },
   "repository": {
