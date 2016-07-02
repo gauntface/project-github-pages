@@ -1,0 +1,56 @@
+.page-header {
+  width: 100%;
+  height: auto;
+
+  background: #00d2ff;
+  background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+
+  color: white;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+
+  padding: var(--padding);
+  box-sizing: border-box;
+
+  text-align: left;
+
+  z-index: --header-z-index;
+}
+
+.page-header h1, .page-header h2 {
+  margin: 0;
+  margin-left: calc(var(--padding) + var(--menu-btn-size));
+}
+
+.page-header h1 {
+  color: white;
+
+  font-family: 'Muli', sans-serif;
+
+  // Make sure the sizes line up
+  line-height: var(--menu-btn-size);
+}
+
+.page-header h2 {
+  margin-top: calc(var(--padding) / 2);
+  color: white;
+  opacity: 0.4;
+  font-size: 16px;
+}
+
+.page-header a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-drawer .page-header .menu-btn {
+  display: none;
+}
+
+.nav-drawer .page-header h1, .nav-drawer .page-header h2 {
+  margin-left: 0;
+}

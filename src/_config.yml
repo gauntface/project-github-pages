@@ -1,0 +1,11 @@
+source:       ./
+destination:  ./build/
+
+layouts_dir:  ./template/_layouts
+includes_dir: ./template/_includes
+
+sass:
+    sass_dir: ./template/_sass
+
+# This adds github pages data
+gems: ['jekyll-github-metadata']

@@ -1,0 +1,29 @@
+.menu-btn {
+  position: absolute;
+  top: var(--padding);
+  left: var(--padding);
+
+  width: var(--menu-btn-size);
+  height: var(--menu-btn-size);
+
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  outline: none;
+  border-radius: 2px;
+  transition: background 0.2s ease-in;
+}
+
+.menu-btn:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-btn:active {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.menu-btn img {
+  width: var(--menu-btn-size);
+  height: var(--menu-btn-size);
+}

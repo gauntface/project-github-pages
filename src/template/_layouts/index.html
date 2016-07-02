@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{% include variables.html %}
+
+{% include components/site-header.html title=project_title subtitle=project_tagline %}
+
+<main>
+  {{ content }}
+</main>
+
+{% include components/footer.html made_by=project_owner made_by_url=project_owner_url %}
