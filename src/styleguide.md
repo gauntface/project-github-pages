@@ -71,6 +71,10 @@ create a solid code example like this:
       }
     }
 
+> This isn't the greatest block quote in the world.
+> This is just a tribute.
+> Matt Gaunt
+
 <hr />
 
 # Styles
@@ -137,17 +141,11 @@ This is added for you in `_layouts/index.html` & `_layouts/page.html`.
 
 Markdown:
 
-<pre><code>{% raw  %}{% include components/footer.html made_by="Team Awesome Sauce" %}{% endraw  %}</code></pre>
-
-<pre><code>{% raw %}{% include components/footer.html made_by="Team Awesome Sauce" made_by_url="/" %}{% endraw %}</code></pre>
+<pre><code>{% raw  %}{% include components/footer.html %}{% endraw  %}</code></pre>
 
 Result:
 
-{% include components/footer.html made_by="Team Awesome Sauce" %}
-
-<br />
-
-{% include components/footer.html made_by="Team Awesome Sauce" made_by_url="/" %}
+{% include components/footer.html %}
 
 <hr />
 
@@ -168,6 +166,13 @@ Markdown:
   }
 {% endhighlight %}{% endraw %}</code></pre>
 
+<pre><code>{% raw %}{% highlight html %}
+<!-- Accent-colored raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Button
+</button>
+{% endhighlight %}{% endraw %}</code></pre>
+
 Result:
 
 {% highlight javascript %}
@@ -177,4 +182,23 @@ Result:
       console.log('Lol I\'m useless.');
     }
   }
+{% endhighlight %}
+
+{% highlight html %}
+<div id="container"/>
+<script>
+  var button = document.createElement('button');
+  var textNode = document.createTextNode('Click Me!');
+  button.appendChild(textNode);
+  button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
+  componentHandler.upgradeElement(button);
+  document.getElementById('container').appendChild(button);
+</script>
+{% endhighlight %}
+
+{% highlight html %}
+<!-- Accent-colored raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Button
+</button>
 {% endhighlight %}

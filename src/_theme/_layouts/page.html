@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% include variables.html %}
+
+{% include components/page-header.html title=page.title subtitle=page.subtitle%}
+
+<main>
+  {{ content }}
+</main>
+
+{% include components/footer.html %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.0/anchor.min.js"></script>
+<script>
+  anchors.add();
+</script>
+<script src="/third_party/prism/prism.js"></script>

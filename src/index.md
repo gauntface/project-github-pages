@@ -41,7 +41,3 @@ fork it on github and customize as much as you like.
     Fork Me on Github
   </a>
 </p>
-
-{% if github.releases %}
-  Currently v{{ github.releases }}
-{% endif %}

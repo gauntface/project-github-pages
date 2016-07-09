@@ -1,0 +1,11 @@
+<header class="page-header">
+
+  <button class="menu-btn js-menu-btn" title="Menu">
+    {% include svgs/menu.svg %}
+  </button>
+
+  <h1>{{ include.title }}</h1>
+  {% if include.subtitle %}
+    <h2>{{ include.subtitle }}</h2>
+  {% endif %}
+</header>

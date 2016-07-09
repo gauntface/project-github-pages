@@ -10,6 +10,25 @@ A simple (hopefully pretty) github pages project.
 
     [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
+## Ideal Setup / Flow
+
+    npm install
+
+    // In Travis
+    project-gh-pages build
+
+Behind the scenes
+  - project-gh-pages would copy over it's template into the
+    current directory.
+  - Build Jekyll
+
+
+To customize styles
+  - Add styles/variables.css
+
+To customize text content
+  - Add _data/customize.yml is in the current directory
+
 ## License
 
 Copyright 2015 Google, Inc.
