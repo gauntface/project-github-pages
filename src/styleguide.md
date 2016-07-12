@@ -1,13 +1,7 @@
 ---
 layout: page
 title: 'Styleguide'
-siteheader_nav:
-  - "Item 1": "#"
-  - "Item 2": "#"
-  - "Item 3": "#"
-  - "Item 4": "#"
-  - "Item 5": "#"
-  - "Item 6": "#"
+navigation_weight: 1
 ---
 
 The point of this styleguide is to see how things look across different
@@ -123,17 +117,20 @@ Markdown:
 
 <pre><code>{% raw  %}{% include components/page-header.html title="Hello" %}{% endraw  %}</code></pre>
 
-<pre><code>{% raw  %}{% include components/page-header.html title="Hello" subtitle="World" %}{% endraw  %}</code></pre>
-
 Result:
 
 {% include components/page-header.html title="Hello" %}
 
-<br />
-
-{% include components/page-header.html title="Hello" subtitle="World" %}
-
 <hr />
+
+## Navigation
+
+The navigation for the site is built up using Jekylls
+[site.html_pages]() variable and will **only** include pages that have the
+`navigation_weight` value set to an integer. The `navigation_weight` is used
+to order the pages.
+
+{% include components/nav-drawer.html %}
 
 ## footer
 
@@ -167,10 +164,10 @@ Markdown:
 {% endhighlight %}{% endraw %}</code></pre>
 
 <pre><code>{% raw %}{% highlight html %}
-<!-- Accent-colored raised button with ripple -->
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+&lt;!-- Accent-colored raised button with ripple --&gt;
+&lt;button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"&gt;
   Button
-</button>
+&lt;/button&gt;
 {% endhighlight %}{% endraw %}</code></pre>
 
 Result:
@@ -182,18 +179,6 @@ Result:
       console.log('Lol I\'m useless.');
     }
   }
-{% endhighlight %}
-
-{% highlight html %}
-<div id="container"/>
-<script>
-  var button = document.createElement('button');
-  var textNode = document.createTextNode('Click Me!');
-  button.appendChild(textNode);
-  button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
-  componentHandler.upgradeElement(button);
-  document.getElementById('container').appendChild(button);
-</script>
 {% endhighlight %}
 
 {% highlight html %}

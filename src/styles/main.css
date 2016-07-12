@@ -4,6 +4,7 @@
 @import "/styles/variables/colors.css";
 
 @import "/styles/components/page-header.css";
+@import "/styles/components/site-header.css";
 @import "/styles/components/footer.css";
 @import "/styles/components/code-styles.css";
 

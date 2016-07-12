@@ -1,6 +1,10 @@
 {% include variables.html %}
 <header class="site-header">
 
+  <button class="menu-btn js-menu-btn" title="Menu">
+    {% include svgs/menu.svg %}
+  </button>
+
   <div class="site-header__heading">
     <h1>{{ include.title }}</h1>
 
@@ -8,19 +12,5 @@
       <h2>{{ include.subtitle }}</h2>
     {% endif %}
   </div>
-
-  {% if page.siteheader_nav %}
-  <nav class="site-header__nav">
-    <ul>
-      {% for itemHash in page.siteheader_nav %}
-      {% if forloop.index <= 3 %}
-      {% for item in itemHash %}
-      <li><a href="{{ project_root_url }}{{ item[1] }}">{{ item[0] }}</a></li>
-      {% endfor %}
-      {% endif %}
-      {% endfor %}
-    </ul>
-  </nav>
-  {% endif %}
 
 </header>

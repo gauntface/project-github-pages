@@ -1,5 +1,9 @@
 @import "/third_party/prism/prism.css";
 
+figure.highlight {
+  margin: 0;
+}
+
 pre, code, pre[class*="language-"], code[class*="language-"] {
   background-color: rgba(0,0,0,.06);
   border-radius: 3px;

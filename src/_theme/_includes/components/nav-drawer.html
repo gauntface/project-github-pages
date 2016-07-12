@@ -1,18 +1,18 @@
 <nav class="nav-drawer js-nav-drawer">
 
   <ul>
-    <li>Oh Hello</li>
-    <li>World</li>
-    <ul>
-      <li>This is</li>
-      <li>super</li>
-      <ul>
-        <li>Nested</li>
-        <li>Boom Boom</li>
-      </ul>
-    </ul>
-    <li>Oh Hai</li>
-    <li>Yup Yup</li>
+    {% assign navigation_pages = site.pages | sort: 'navigation_weight' %}
+    {% for nav_page in navigation_pages %}
+      <li>
+        <a href="{{ nav_page.url }}" {% if nav_page.url == page.url %}class="active"{% endif %}>
+          {% if nav_page.url == "/docs/" %}
+            Docs
+          {% else %}
+            {{ nav_page.title }}
+          {% endif %}
+        </a>
+      </li>
+    {% endfor %}
   </ul>
 
 </nav>

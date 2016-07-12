@@ -1,8 +1,7 @@
 ---
 layout: index
-siteheader_nav:
-  - "Quick Start": "/quick-start"
-  - "Docs": "/docs"
+title: "Home"
+navigation_weight: 0
 ---
 
 This project is a set of template that kick-start a new Github Project.
